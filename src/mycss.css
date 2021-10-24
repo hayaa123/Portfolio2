@@ -1,0 +1,296 @@
+/* .nav-color {
+  background-color: rgba(255, 255, 255, 0.377);
+  position: sticky;
+  top: 0;
+  height: 75px;
+}*/
+.linkedIn-img {
+  filter: grayscale(1);
+  width: 50px;
+  object-fit: cover;
+}
+
+.nav-linkes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto 100%;
+  gap: 50px;
+}
+.socialLinks{
+  display: flex;
+  gap:20px
+}
+
+@media screen and (max-width:480px) {
+  .nav-linkes{
+    flex-direction: column;
+    margin: 0px;
+  }
+  .linkedIn-img{
+    margin:20px;
+    width: 25px;
+  }
+  .socialLinks{
+    gap:0px;
+    margin: auto;
+  }
+  
+}
+
+
+/* %%%%%%%%%%%%%%%%%%% INTRO %%%%%%%%%%%%%%%%%%%%%% */
+.theGrid {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 3px 5px 0 rgb(0 0 0 / 19%);
+  z-index: -1;
+  height: 650px;
+  justify-content: center;
+}
+.theGrid:hover {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+.gridItem{
+  width: 80%;
+}
+.article-intro {
+  padding: 20%;
+}
+.my-name{
+  font-size: 60px;
+ 
+}
+.title{
+ 
+    color: #FF949E;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+@media screen and (max-width:480px){
+  .theGrid{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly
+  }
+  .row{
+    flex-wrap: nowrap;
+  }
+  .article-intro{
+    padding-left: 5%;
+  }
+  .my-name{
+      font-size: 45px;
+  }
+  .title{
+    font-size: 20px;
+  }
+  .hello{
+    font-size: 20px;
+  }
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%% ABOUT %%%%%%%%%%%%%%% */
+.my-img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  /* animation: my-animation linear 1s; */
+}
+.about-flex{
+  display: flex;
+  width: 90%;
+  align-items: center;
+  gap: 15%;
+}
+.about-div {
+  padding-top: 10%;
+}
+.Buttons-div {
+  display: flex;
+  gap: 3%;
+  margin-top: 5%;
+}
+
+.buttons {
+  background-color: #ff949e;
+}
+
+@media screen and (max-width:480px){
+  .my-img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    /* display: block;
+    margin: auto; */
+  }
+  .about-flex{
+    flex-direction: column;
+    height: 650px;
+  }
+}
+/* %%%%%%%%%%%%%%%%%%%%%%%%% skills %%%%%%%%%%%%%%%%%%%%%%%%%% */
+.skills-div {
+  margin-top: 1%;
+}
+.skills {
+  /* position: relative; */
+  display: flex;
+  overflow-x: scroll;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+}
+.skills::-webkit-scrollbar {
+  width: 0;
+}
+
+.skills.active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(1);
+}
+.skills-image {
+  height: 5%;
+  width: 5%;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: grayscale(1);
+  transition: 0.4s;
+
+  /* background-color: lawngreen; */
+}
+/* from w3 schools */
+.skills-image:hover {
+  filter: grayscale(0);
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55 Works %%%%%%%%%%%%%%%%% */
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.836); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.cont:hover .overlay {
+  opacity: 1;
+}
+
+.carosel-img {
+  height: 350px;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+.cont {
+  border: 1px dotted #fff;
+  border-radius: 4px;
+  padding: 5px;
+  width: 600px;
+}
+.work-h {
+  text-align: center;
+  margin-top: 10%;
+  color: #fff;
+  padding-top: 5%;
+}
+.work-flex{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.work-div {
+  background-color: #ff949e;
+  /* background-image: url("./Images/Simple\ Shiny.svg");
+  background-size: cover; */
+  height: 1100px;
+}
+@media screen and (max-width:480px){
+ 
+.cont{
+  width:300px;
+  height: 183px;
+  margin-top: 3%;
+}
+.carosel-img{
+  object-fit:fill;
+  height: 170px;
+}
+.work-div{
+  height: 950px;
+}
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%% Contact %%%%%%%%%%%%%%%%%%% */
+
+form {
+  margin-top: 30px;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+}
+
+input {
+  display: block;
+  width: 50%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 10px 0px;
+}
+
+textarea {
+  width: 75%;
+  display: block;
+  margin: 10px 0px;
+}
+button {
+  border: none;
+  background-color: #ff949e;
+  padding: 15px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+@media screen and (max-width:480px){
+
+ .contactGrid{
+  display: flex;
+  height: 750px;
+  flex-direction: column;
+ }
+.form{
+  width: 400px;
+}
+.letter-img{
+  width: 300px;
+}
+
+} 
