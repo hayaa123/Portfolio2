@@ -27,7 +27,7 @@ export class Header extends Component {
                     <Image src={linked} className="linkedIn-img" />
                   </Nav.Link>
                   <Nav.Link
-                    href="https://www.linkedin.com/in/hayaa-lawansah-63a215175/"
+                    href="https://github.com/hayaa123/"
                     target="blanck"
                   >
                     <Image
