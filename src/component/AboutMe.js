@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Container, Row, Col, Image, Button } from "react-bootstrap";
+import { Container, Image, Button } from "react-bootstrap";
 import hayaa from "../Images/hayaa.jpg";
 
 export class AboutMe extends Component {

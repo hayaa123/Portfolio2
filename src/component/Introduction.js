@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Col, Container, Row, Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import illustration from "../Images/Team work_Monochromatic.svg";
 // import sprinkiles from "../Images/Sprinkle.svg"
 export class Introduction extends Component {

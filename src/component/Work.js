@@ -5,7 +5,7 @@ import BussMall from "../Images/buss mall .png";
 import CanBooks1 from "../Images/can_of_books1.png";
 import CanBooks2 from "../Images/can_of_books2.png";
 import travel1 from "../Images/travelbyond homepage.png";
-import { Carousel, Col,Row, Container } from "react-bootstrap";
+import { Carousel, Container } from "react-bootstrap";
 import travel2 from "../Images/fav part .png";
 let content = [
   {

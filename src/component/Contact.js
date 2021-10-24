@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import pict from "../Images/undraw_New_message_re_fp03.svg";
 import "../mycss.css";
 import emailjs from "emailjs-com";
